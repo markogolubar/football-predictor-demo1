@@ -4,7 +4,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
 
 st.set_page_config(page_title="Football Predictor", layout="centered")
-st.title("⚽ Mini Football Match Predictor")
+st.title("⚽ Football Match Predictor")
 st.write("Interaktivni demo koji prikazuje kako ML predviđa ishod utakmice.")
 
 # Unosi
@@ -37,5 +37,5 @@ input_scaled = sc.transform(input_data)
 pred = model.predict(input_scaled)[0]
 labels = ["🏠 Home Win", "🤝 Draw", "✈️ Away Win"]
 
-st.header("🔮 Predikcija:")
+st.header("🔮 Predviđanje:")
 st.subheader(labels[pred])
