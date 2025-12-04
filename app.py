@@ -38,4 +38,4 @@ pred = model.predict(input_scaled)[0]
 labels = ["🏠 Home Win", "🤝 Draw", "✈️ Away Win"]
 
 st.header("🔮 Predviđanje:")
-st.subheader(labels[pred])
+st.header(labels[pred])
