@@ -37,5 +37,4 @@ input_scaled = sc.transform(input_data)
 pred = model.predict(input_scaled)[0]
 labels = ["🏠 Home Win", "🤝 Draw", "✈️ Away Win"]
 
-st.header("🔮 Predviđanje:"labels[pred])
 st.header(labels[pred])
